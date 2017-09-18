@@ -3,3 +3,22 @@
 @import "components/main";
 @import "layout/main";
 @import "pages/main";
+
+@font-face {
+  font-family: 'krist';
+  src: url('../../assets/fonts/Kristi-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'typewriter';
+  src: url('../../assets/fonts/American Typewriter Regular.ttf');
+}
+
+@font-face {
+  font-family: 'benton book';
+  src: url('../../assets/fonts/BentonSans Book.otf');
+}
+@font-face {
+  font-family: 'benton thin';
+  src: url('../../assets/fonts/BentonSans Thin.otf');
+}

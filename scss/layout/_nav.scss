@@ -1,0 +1,10 @@
+nav {
+  grid-area: nav;
+  ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    text-decoration: underline;
+    font-family: 'benton thin';
+  }
+}
