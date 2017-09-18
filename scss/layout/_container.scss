@@ -1,0 +1,11 @@
+#grid .container {
+  grid-area: content;
+  .container-head {
+    h1 {
+      font-family: 'kristi';
+      font-size: 120px;
+      margin: 0 0 110px 50px;
+      font-weight: 100;
+    }
+  }
+}

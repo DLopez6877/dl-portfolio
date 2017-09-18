@@ -4,7 +4,20 @@ nav {
     display: flex;
     flex-direction: column;
     list-style: none;
-    text-decoration: underline;
     font-family: 'benton thin';
+    text-align: center;
+    padding: 0;
+    height: calc(100vh - 500px);
+    justify-content: space-around;
+    @media (max-height: 500px) {
+      justify-content: space-between;
+      height: auto;
+    }
+    @media (max-height: 600px) {
+      height: auto;
+    }
+  }
+  li {
+    margin-top: 10px;
   }
 }
