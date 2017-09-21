@@ -1,11 +1,19 @@
 #grid .container {
   grid-area: content;
+  font-family: 'typewriter';
   .container-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    @media (max-width: 950px) {
+      flex-direction: column;
+    }
     h1 {
       font-family: 'kristi';
       font-size: 120px;
-      margin: 0 0 110px 50px;
+      margin: 0 0 20px 0px;
       font-weight: 100;
     }
   }
+  padding: 0 42px;
 }

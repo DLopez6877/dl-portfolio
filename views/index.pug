@@ -1,6 +1,7 @@
 html
   head
     title Daniel Lopez
+    meta(name="viewport" content="width=device-width, initial-scale=1")
     script(src="/js/jquery-3.2.1.min.js")
     script(src="build/js/app.js")
     link(rel="stylesheet" type="text/css" href="build/css/styles.css")
@@ -8,21 +9,41 @@ html
   #grid
     header
       img(src="../assets/images/logo-white.png")
-      h1 Daniel Lopez
+      h2 Daniel Lopez
       h4 Web Designer
       h4 &
       h4 Web Developer
     nav
       ul
-        li about
-        li resume
-        li activity
-        li contact
+        li Projects
+        li About
+        li Github
+        li Contact
     .featured-image
     .container
       .container-head
         h1 Projects
         .pagination
-      h3 this is where there content goes
+          .page-link.active-page-link
+          .page-link
+          .page-link
+          .page-link
+          .page-link
+      .feature-wrapper
+        .featured-project
+          h2 P.O.L.L.I. the robotic arm
+          .featured-images
+          img(src="../assets/images/devices.png")
+          .image-links
+            .image-link
+            .image-link
+            .image-link
+            .image-link
+        .additional-infos
+          .additional-info Website
+          .additional-info Github
+        .description
+          p P.O.L.L.I is an interactive robotic arm that can be controlled through a mobile-friendly website or by hand motion. The project was proposed by John Dowd during week 5 of the Javascript course at Epicodus. Pete Lazuran, Isabella Abatgis, and myself quickly signed on as members. 
+          p The project was created using Johnny-Five to write the robotic-specific methods in JavaScript and using express as middleware to make the user-interface.
     footer
       .copy © copyright goes here
