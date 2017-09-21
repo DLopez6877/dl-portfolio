@@ -19,6 +19,7 @@ nav {
   }
   li {
     padding: 10px;
+    line-height: 20px;
     @extend %link-hover;
   }
 }

@@ -1,5 +1,9 @@
 .pagination {
   display: flex;
+  margin-left: -20px;
+  @media (min-width: 950px) {
+    margin-left: 0;
+  }
 }
 .page-link {
   width: 20px;
@@ -8,8 +12,8 @@
   background-color: fade-out(white, .75);
   border-radius: 50%;
   border: solid 3px white;
+  transition: all .3s linear;
   &:hover {
-    transition: all .2s ease-in-out;
     background-color: fade-out($accent-color, .25);
     border-color: black;
     transform: scale(2);

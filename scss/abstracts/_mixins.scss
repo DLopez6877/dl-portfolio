@@ -1,7 +1,8 @@
 %link-hover {
+  transition: all .3s linear;
   &:hover {
     color: $accent-color;
-    transition: color .3s ease-in-out;
     cursor: pointer;
+    font-size: 20px;
   }
 }

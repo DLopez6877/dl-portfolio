@@ -21,7 +21,11 @@
     height: 85px;
     border: solid 2px;
     border-color: #ccc #555 #fff #aaa;
-    margin: 10px;
+    margin: 10px ;
+    transition: box-shadow .3s linear;
+    &:hover {
+      box-shadow: 0 0 30px $accent-color;
+    }
   }
 }
 
@@ -32,6 +36,7 @@
   font-family: 'benton thin';
   .additional-info {
     padding: 10px;
+    line-height: 20px;
     @extend %link-hover;
   }
 }
