@@ -4,7 +4,9 @@
   flex-direction: column;
   justify-content: center;
   h2 {
-    // font-size: 49px;
+    @media screen and (max-height: 900px) {
+      display: none;
+    }
     text-align: center;
   }
   img {
@@ -16,7 +18,12 @@
 .image-links {
   display: flex;
   justify-content: center;
+  @media screen and (max-height: 900px) {
+    display: none;
+  }
   .image-link {
+    background-color: fade-out(white, .9);
+    box-shadow: inset 0 0 30px black;
     width: 85px;
     height: 85px;
     border: solid 2px;
@@ -39,4 +46,8 @@
     line-height: 20px;
     @extend %link-hover;
   }
+}
+
+.description {
+  margin-bottom: 30px;
 }

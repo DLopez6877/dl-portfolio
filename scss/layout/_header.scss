@@ -5,6 +5,9 @@ header {
   align-items: center;
   img {
     width: 200px;
+    @media (max-height: 400px) {
+      width: 25vh;
+    }
   }
   h2 {
     margin: 0 5px 16px 5px;

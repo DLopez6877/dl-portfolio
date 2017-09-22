@@ -13,6 +13,10 @@ a {
   text-decoration: none;
 }
 
+.initially-hidden {
+  display: none;
+}
+
 #grid {
   min-height: 100vh;
   display: grid;
