@@ -1,5 +1,5 @@
 %link-hover {
-  transition: all .3s linear;
+  transition: all .2s cubic-bezier(0.65, 0.69, 0.87, 1.5);
   &:hover {
     color: $accent-color;
     cursor: pointer;

@@ -65,7 +65,7 @@ $(function() {
       $('.feature-wrapper').hide();
       $('#project5').show();
       $('.featured-project-image').html('<img src="../assets/images/devices5.png">');
-      $('.featured-image').css('background-image', 'url(../../assets/images/bart-larue.jpg)')
-      $('body').css('background', '#004380');
+      $('.featured-image').css('background-image', 'url(../../assets/images/daniel-cheung.jpg)')
+      $('body').css('background', '#2c1e07');
   });
 });

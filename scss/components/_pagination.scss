@@ -12,11 +12,11 @@
   background-color: fade-out(white, .75);
   border-radius: 50%;
   border: solid 3px white;
-  transition: all .3s linear;
+  transition: all .2s cubic-bezier(0.65, 0.69, 0.87, 1.5);
   &:hover {
     background-color: fade-out($accent-color, .25);
-    border-color: black;
-    transform: scale(2);
+    border-color: transparent;
+    transform: scale(1.6);
     cursor: pointer;
   }
 }
