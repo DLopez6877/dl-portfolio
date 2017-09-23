@@ -14,20 +14,45 @@ html
       h4 &
       h4 Web Developer
     nav
-      ul
+      ul#nav-ul
         a(href="#projects-anchor")
-          li Projects
-        li About Me
+          li.projects-nav Projects
+        li.about-nav About Me
         a(href="https://github.com/DLopez6877")
           li My Github
-        li Contact
+        li.contact-nav Contact
+        .contact-info.initially-hidden
+          a(href='https://www.linkedin.com/in/dlopez6877/')
+            .icon
+              img(src='../assets/images/linkedin-icon.png')
+            p LinkedIn
+          a(href='mailto:dlopez6877@gmail.com')
+            .icon
+              img(src='../assets/images/email-icon.png')
+            p E-mail
     .featured-image
       //-  all photos taken from unsplash.com
       //-     robot photo provided by Siyan Ren
       //-     bananna photo provided by Mike Dorner
       //-     pills photo provided by freestocks.org
-      //-     robot photo provided by saiyan-ren
-    .container
+      //-     heart photo provided by Bart Larue
+      //-     lego photo provided by Daniel Cheung
+    .container#about-container.initially-hidden
+      .container-head
+        h1 About
+      p#bio Daniel Lopez is a web developer, web designer, and full-time geek. He spends most of his time inside his humble abode in front of his computer in Vancouver, WA. Although he is a simple man, he likes to dabble in complex theories and considers himself a tinker of things and stuff. You could imagine his excitement when he discovered Arduino boards for the first time a few months ago. Can you say, “instant hobby”? Although his bio is a bit odd and he is referring to himself in the third person, Daniel is a delightful character that strides headfirst into new challenges.
+      ul
+        li Employment Status: <span>Looking for a job.</span>
+        br
+        li Favorite Book: <span>Ready Player One</span>
+        br
+        li Favorite TV Show: <span>Rick and Morty</span>
+        br
+        li Favorite Video Game: <span>Fifa</span>
+        br
+        li Favorite Soccer Team: <span>Portland Timbers</span>
+        br
+    .container#project-container
       #projects-anchor.container-head
         h1 Projects
         .pagination

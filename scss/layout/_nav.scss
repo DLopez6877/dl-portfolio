@@ -28,4 +28,23 @@ nav {
     line-height: 20px;
     @extend %link-hover;
   }
+  .contact-info {
+    @media (max-width: 850px) {
+      position: absolute;
+      top: 30px;
+      right: 20px;
+    }
+    a {
+      @extend %link-hover;
+      p {
+        margin: 10px;
+      }
+    }
+  }
+}
+
+.contact-height {
+  @media (min-width: 850px) and (max-height: 900px){
+    height: calc(100vh - 50.56px);
+  }
 }
