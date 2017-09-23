@@ -6,6 +6,8 @@ body {
   margin: 0px;
   letter-spacing: .1em;
   font-family: 'benton thin';
+  background: #000;
+  color: #fff;
 }
 
 a {
@@ -38,8 +40,6 @@ a {
 }
 
 #grid > * {
-  background: #000;
-  color: #fff;
   padding: 0 10px;
   @media (max-width: 850px) {
     padding: 0;
@@ -48,7 +48,7 @@ a {
 
 #grid .featured-image {
   grid-area: img;
-  background-image: url(../../assets/images/robot-siyan-ren.jpg);
+  background-image: url(../../assets/images/robot-siyan-ren.jpeg);
   background-attachment: fixed;
   transition: background-position .3s linear;
   background-size: cover;

@@ -18,9 +18,15 @@ html
         a(href="#projects-anchor")
           li Projects
         li About Me
-        li Github
+        a(href="https://github.com/DLopez6877")
+          li My Github
         li Contact
     .featured-image
+      //-  all photos taken from unsplash.com
+      //-     robot photo provided by Siyan Ren
+      //-     bananna photo provided by Mike Dorner
+      //-     pills photo provided by freestocks.org
+      //-     robot photo provided by saiyan-ren
     .container
       #projects-anchor.container-head
         h1 Projects
@@ -33,80 +39,88 @@ html
       .feature-wrapper#project1
         .featured-project
           h2 P.O.L.L.I. the robotic arm
-          .featured-images
-          img(src="../assets/images/devices1.png")
+          .featured-project-image.project1
+            img(src="../assets/images/devices1.png")
           .image-links
-            .image-link
+            .image-link.image-link11
               img(src="../assets/images/phone1.png")
-            .image-link
+            .image-link.image-link12
               img(src="../assets/images/tablet1.png")
-            .image-link
+            .image-link.image-link13
               img(src="../assets/images/laptop1.png")
-            .image-link
+            .image-link.image-link14
               img(src="../assets/images/desktop1.png")
         .additional-infos
-          .additional-info Website
-          .additional-info Github
+          a(href="https://sigtaba.github.io/P.O.L.L.I/")
+            .additional-info Website
+          a(href="https://github.com/irishdowd10/P.O.L.L.I")
+            .additional-info Github
+          a(href="https://www.youtube.com/watch?v=2-coaPPl-Yk&feature=youtu.be")
+            .additional-info Video
         .description
           p P.O.L.L.I is an interactive robotic arm that can be controlled through a mobile-friendly website or by hand motion. The project was proposed by John Dowd during week 5 of the Javascript course at Epicodus. Pete Lazuran, Isabella Abatgis, and myself quickly signed on as members. 
           p The project was created using Johnny-Five to write the robotic-specific methods in JavaScript and using express as middleware to make the user-interface.
-      .feature-wrapper#project2
+      .feature-wrapper#project2.initially-hidden
         .featured-project
           h2 Dad Joke Generator
-          .featured-images
-          img(src="../assets/images/devices2.png")
+          .featured-project-image.project2
+            img(src="../assets/images/devices2.png")
           .image-links
-            .image-link
+            .image-link.image-link21
               img(src="../assets/images/phone2.png")
-            .image-link
+            .image-link.image-link22
               img(src="../assets/images/tablet2.png")
-            .image-link
+            .image-link.image-link23
               img(src="../assets/images/laptop2.png")
-            .image-link
+            .image-link.image-link24
               img(src="../assets/images/desktop2.png")
         .additional-infos
-          .additional-info Website
-          .additional-info Github
+          a(href="http://rawgit.com/calvincushman/dad-joke-generator/master/index.html")
+            .additional-info Website
+          a(href="https://github.com/calvincushman/dad-joke-generator")
+            .additional-info Github
         .description
           p P.O.L.L.I is an interactive robotic arm that can be controlled through a mobile-friendly website or by hand motion. The project was proposed by John Dowd during week 5 of the Javascript course at Epicodus. Pete Lazuran, Isabella Abatgis, and myself quickly signed on as members. 
           p The project was created using Johnny-Five to write the robotic-specific methods in JavaScript and using express as middleware to make the user-interface.
-      .feature-wrapper#project3
+      .feature-wrapper#project3.initially-hidden
         .featured-project
           h2 Find a Doctor
-          .featured-images
-          img(src="../assets/images/devices3.png")
+          .featured-project-image.project3
+            img(src="../assets/images/devices3.png")
           .image-links
-            .image-link
+            .image-link.image-link31
               img(src="../assets/images/phone3.png")
-            .image-link
+            .image-link.image-link32
               img(src="../assets/images/tablet3.png")
-            .image-link
+            .image-link.image-link33
               img(src="../assets/images/laptop3.png")
-            .image-link
+            .image-link.image-link34
               img(src="../assets/images/desktop3.png")
         .additional-infos
-          .additional-info Github
+          a(href="https://github.com/DLopez6877/doctor-api")
+            .additional-info Github
         .description
           p P.O.L.L.I is an interactive robotic arm that can be controlled through a mobile-friendly website or by hand motion. The project was proposed by John Dowd during week 5 of the Javascript course at Epicodus. Pete Lazuran, Isabella Abatgis, and myself quickly signed on as members. 
           p The project was created using Johnny-Five to write the robotic-specific methods in JavaScript and using express as middleware to make the user-interface.
-      .feature-wrapper#project4
+      .feature-wrapper#project4.initially-hidden
         .featured-project
           h2 Funder
-          .featured-images
-          img(src="../assets/images/devices4.png")
+          .featured-project-image.project4
+            img(src="../assets/images/devices4.png")
           .image-links
-            .image-link
+            .image-link.image-link41
               img(src="../assets/images/phone4.png")
-            .image-link
+            .image-link.image-link42
               img(src="../assets/images/tablet4.png")
-            .image-link
+            .image-link.image-link43
               img(src="../assets/images/laptop4.png")
-            .image-link
+            .image-link.image-link44
               img(src="../assets/images/desktop4.png")
         .additional-infos
-          .additional-info Github
+          a(href="https://github.com/DLopez6877/funder")
+            .additional-info Github
         .description
           p P.O.L.L.I is an interactive robotic arm that can be controlled through a mobile-friendly website or by hand motion. The project was proposed by John Dowd during week 5 of the Javascript course at Epicodus. Pete Lazuran, Isabella Abatgis, and myself quickly signed on as members. 
           p The project was created using Johnny-Five to write the robotic-specific methods in JavaScript and using express as middleware to make the user-interface.
     footer
-      .copy © copyright goes here
+      .copy © Daniel J. Lopez
