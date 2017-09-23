@@ -1,0 +1,54 @@
+#intro {
+  height: 100vh;
+  width: 100vw;
+  animation: intro 2.6s linear forwards;
+  img, #slash, #flick {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50vw;
+  }
+  #flick {
+    transform: translate(-50%, 10%);
+    background: black;
+    height: 20vh;
+    animation: flick 2.6s linear forwards;
+  }
+  #slash {
+    background: black;
+    height: 50vh;
+    animation: slash 2.6s linear forwards;
+  }
+}
+
+@keyframes intro {
+  55% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes slash {
+  10% {
+    transform: translate(-50%, -50%);
+    width: 50vw;
+  }
+  40%, 100% {
+    transform: translate(100%, -400%);
+    width: 0vw;
+  }
+}
+
+@keyframes flick {
+  15% {
+    transform: translate(-50%, 10%);
+    width: 50vw;
+  }
+  50%, 100% {
+    transform: translate(-200%, 10%);
+    width: 30vw;
+  }
+}
