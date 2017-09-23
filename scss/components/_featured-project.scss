@@ -53,4 +53,9 @@
 
 .description {
   margin-bottom: 30px;
+  text-align: justify;
+  a {
+    @extend %link-hover;
+    color: $accent-color;
+  }
 }
