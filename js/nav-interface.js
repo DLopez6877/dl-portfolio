@@ -12,7 +12,6 @@ $(function() {
   // Contact
   $('.contact-nav').click(function() {
     $('.contact-info').slideToggle("slow", "swing", function(){
-      $('#nav-ul').toggleClass('contact-height');
       console.log('¯\\_(ツ)_/¯ email me?');
     });
   });
