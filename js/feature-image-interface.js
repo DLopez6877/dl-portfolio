@@ -17,6 +17,11 @@ $(function() {
 		"../../assets/images/mike-dorner.jpg",
 		"../../assets/images/freestocks-org.jpg",
 		"../../assets/images/bart-larue.jpg",
-		"../../assets/images/daniel-cheung.jpg"
+		"../../assets/images/daniel-cheung.jpg",
+    "../../assets/images/devices1.png",
+    "../../assets/images/devices2.png",
+    "../../assets/images/devices3.png",
+    "../../assets/images/devices4.png",
+    "../../assets/images/devices5.png"
 	)
 });

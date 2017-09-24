@@ -28,6 +28,7 @@ nav {
     line-height: 20px;
     @extend %link-hover;
   }
+
   .contact-info {
     a {
       @extend %link-hover;
@@ -39,5 +40,11 @@ nav {
       margin-top: 30px;
       flex: 0 1 100%;
     }
+  }
+}
+
+#grid{
+  #about-container {
+    padding: 0 20px;
   }
 }
