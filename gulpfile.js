@@ -12,6 +12,7 @@ var sass = require('gulp-sass');
 var sourcemaps = require('gulp-sourcemaps');
 var pug = require('gulp-pug');
 var babel = require('gulp-babel');
+var ghPages = require('gulp-gh-pages');
 
 var buildProduction = utilities.env.production;
 
@@ -109,4 +110,9 @@ gulp.task('babel', ['jsBrowserify'], function() {
             presets: ['es2015']
         }))
         .pipe(gulp.dest('./build/js'));
+});
+
+gulp.task('deploy', function() {
+  return gulp.src('./dist/**/*')
+    .pipe(ghPages());
 });
