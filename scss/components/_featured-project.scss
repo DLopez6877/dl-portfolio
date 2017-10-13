@@ -53,11 +53,12 @@
 }
 
 .description {
-  line-height: 1.5em;
   margin-bottom: 30px;
   text-align: justify;
   a {
-    @extend %link-hover;
     color: $accent-color;
+  }
+  @media (max-width: 850px) {
+    padding: 0 20px;
   }
 }

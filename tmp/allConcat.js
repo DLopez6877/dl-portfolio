@@ -16,8 +16,8 @@ $(function() {
 		"../../assets/images/robot-siyan-ren.jpeg",
 		"../../assets/images/mike-dorner.jpg",
 		"../../assets/images/freestocks-org.jpg",
-		"../../assets/images/bart-larue.jpg",
 		"../../assets/images/daniel-cheung.jpg",
+		"../../assets/images/joanna-kosinska.jpg",
     "../../assets/images/devices1.png",
     "../../assets/images/devices2.png",
     "../../assets/images/devices3.png",
@@ -103,8 +103,8 @@ $(function() {
       $('.feature-wrapper').hide();
       $('#project4').show();
       $('.featured-project-image').html('<img src="../assets/images/devices4.png">');
-      $('.featured-image').css('background-image', 'url(../../assets/images/bart-larue.jpg)');
-      $('body').css('background', '#0a0721');
+      $('.featured-image').css('background-image', 'url(../../assets/images/joanna-kosinska.jpg)');
+      $('body').css('background', '#3e5800');
   });
   $('.page-link5').click(function() {
       $('.page-link').removeClass('active-page-link');

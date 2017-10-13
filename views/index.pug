@@ -41,13 +41,17 @@ html
       //-     robot photo provided by Siyan Ren
       //-     bananna photo provided by Mike Dorner
       //-     pills photo provided by freestocks.org
-      //-     heart photo provided by Bart Larue
+      //-     drink photo provided by Joanna Kosinska
       //-     lego photo provided by Daniel Cheung
     .container#about-container.initially-hidden
       .container-head
         h1 About
       p#bio Daniel Lopez is a web developer, web designer, and full-time geek. He spends most of his time inside his humble abode in front of his computer in Vancouver, WA. Although he is a simple man, he likes to dabble in complex theories and considers himself a tinker of things and stuff. You could imagine his excitement when he discovered Arduino boards for the first time a few months ago. Can you say, “instant hobby”? Although his bio is a bit odd and he is referring to himself in the third person, Daniel is a delightful character that strides headfirst into new challenges.
       ul
+        li 
+          a(href="https://codepen.io/DLopez6877/") Codepen: <span>https://codepen.io/DLopez6877/</span>
+        br
+        br
         li Employment Status: <span>Looking for a job.</span>
         br
         li Favorite Book: <span>Ready Player One</span>
@@ -135,7 +139,7 @@ html
           p I wanted to design the webpage to have a friendly medical feel so I went with the color blue. The layout was loosly based off of a DevTips (Devin Allen) <a href="https://www.youtube.com/watch?v=jMW0bmrb2n4">youtube video</a> about full screen models and splash pages.
       .feature-wrapper#project4.initially-hidden
         .featured-project
-          h2 Funder
+          h2 Drinken (automated bartender)
           .featured-project-image.project4
             img(src="../assets/images/devices4.png")
           .image-links
@@ -150,9 +154,12 @@ html
         .additional-infos
           a(href="https://github.com/DLopez6877/funder")
             .additional-info Github
+          a(href="https://youtu.be/Ove5rQImxyU")
+            .additional-info Video
         .description
-          p Funder is an imaginary site for crowd funding services. You can add a crowdfunding project, view all current projects, and if you log in as admin you can edit and delete the current projects.
-          p Funder was created over two days during class. The purpose of this project was to learn how to use Firebase with an Angular2 project. Other technologies used were bower to install Bootstrap along with Sass.
+          p Drinken is an automated bartender machine. As a user you are able to select a drink, then select the size you want and press the pour drink button. Drinken will then pour you a drink based on the recipe programmed into the database as the button animates to work as a countdown timer for when your drink will be ready. You are also able to add, edit, and delete drinks from the interface. It currently is located in my living room connected to a Rasberry Pi 3 so I can have it pour me drinks from my phone.
+          p Technologies used: MongoDB, Express.js, Angular2, Node.js, Johnny-Five, Sass, Cura(3d printing)
+          p I decided to do this project because while researching how to build a robotic arm (P.O.L.L.I.) I came across a lot of similar automated bartender projects. One of which was from <a href="http://yujiangtham.com/2014/05/25/build-your-very-own-drink-mixing-robot-part-1/">Yu Jiang Tham</a> who provided .STL files for the structure that could be 3d printed and a great reference at times.
       .feature-wrapper#project5.initially-hidden
         .featured-project
           h2 Weekend Project Portfolio

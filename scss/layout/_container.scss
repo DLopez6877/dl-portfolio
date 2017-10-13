@@ -37,3 +37,16 @@
   line-height: 1.5em;
   text-indent: 30px;
 }
+
+#grid #about-container {
+  padding: 0 20px;
+  @media (min-width: 550px) {
+    padding: 0 62px;
+  }
+  @media (min-width: 850px) {
+    padding: 0 42px;
+  }
+  a {
+    color: $accent-color;
+  }
+}

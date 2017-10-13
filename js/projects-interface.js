@@ -32,8 +32,8 @@ $(function() {
       $('.feature-wrapper').hide();
       $('#project4').show();
       $('.featured-project-image').html('<img src="../assets/images/devices4.png">');
-      $('.featured-image').css('background-image', 'url(../../assets/images/bart-larue.jpg)');
-      $('body').css('background', '#0a0721');
+      $('.featured-image').css('background-image', 'url(../../assets/images/joanna-kosinska.jpg)');
+      $('body').css('background', '#3e5800');
   });
   $('.page-link5').click(function() {
       $('.page-link').removeClass('active-page-link');
