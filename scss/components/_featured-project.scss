@@ -22,31 +22,6 @@
   }
 }
 
-.image-links {
-  display: none;
-  // display: flex;
-  justify-content: center;
-  @media screen and (max-height: 900px) {
-    display: none;
-  }
-  .image-link {
-    background-color: fade-out(white, .9);
-    width: 85px;
-    height: 85px;
-    border: solid 2px;
-    border-color: #ccc #555 #fff #aaa;
-    margin: 10px ;
-    transition: all .2s cubic-bezier(0.65, 0.69, 0.87, 1.5);
-    &:hover {
-      box-shadow: 0 0 30px $accent-color;
-    }
-    @media screen and (max-width: 850px) {
-      height: 70px;
-      width: 70px;
-    }
-  }
-}
-
 .tldr {
   border-top: 1px solid white;
   border-bottom: 1px solid white;
