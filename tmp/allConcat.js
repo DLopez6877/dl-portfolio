@@ -1,9 +1,18 @@
 $(function() {
   //move large image
-  $('#grid').mousemove(function(e) {
-    var offset = e.originalEvent.offsetX * -1;
-    $('.featured-image').css("background-position", "" + offset + "");
+  $('.featured-image').css("background-position", "" + $('.featured-image')[0].offsetWidth + "");
+  $('html').mousemove(function(e) {
+    var imageWidth = $('.featured-image')[0].offsetWidth;
+    var htmlWidth = e.originalEvent.clientX;
+    var offset = imageWidth - htmlWidth;
+    var offset2 = -htmlWidth/2;
+    if (offset > -imageWidth) {
+      $('.featured-image').css("background-position", "" + offset + "");
+    } else {
+      $('.featured-image').css("background-position", "" + offset2 + "");
+    }
   });
+
   //preload images
   var images = new Array()
 	function preload() {

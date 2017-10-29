@@ -214,14 +214,14 @@ $font-stack-consolas: (
 ///
 ///   // CSS Output
 ///   .element {
-///     font-family: "Courier New", "Courier", "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+///     font-family: "Courier New", "Courier", "Lucida Sans goudy", "Lucida goudy", monospace;
 ///   }
 
 $font-stack-courier-new: (
   "Courier New",
   "Courier",
-  "Lucida Sans Typewriter",
-  "Lucida Typewriter",
+  "Lucida Sans goudy",
+  "Lucida goudy",
   monospace,
 );
 
