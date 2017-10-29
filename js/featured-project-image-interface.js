@@ -10,6 +10,6 @@ $(function() {
         number = i;
       }
     }
-    $(this).html('<img src="../assets/images/devices'+ number + '.png">');
+    $(this).html('<img src="/assets/images/devices'+ number + '.png">');
   });
 });
