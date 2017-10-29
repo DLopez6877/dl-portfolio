@@ -23,7 +23,7 @@ $(function() {
 	}
 	preload(
 		"/assets/images/robot-siyan-ren.jpeg",
-		"/assets/images/mike-dorner.jpg",
+		"/assets/images/redd-angelo.jpeg",
 		"/assets/images/freestocks-org.jpg",
 		"/assets/images/daniel-cheung.jpg",
 		"/assets/images/joanna-kosinska.jpg",

@@ -1,10 +1,43 @@
 .pagination {
   display: flex;
   margin-left: -20px;
+  position: relative;
   @media (min-width: 950px) {
     margin-left: 0;
   }
+  h5 {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 5px;
+    text-align: center;
+    span {
+      cursor: pointer;
+      transition: all .2s cubic-bezier(0.65, 0.69, 0.87, 1.5);
+    }
+    span:hover {
+      color: $accent-color;
+    }
+  }
+  i {
+    display: inline-block;
+    margin: 0 2px;
+    transform: translateY(2px);
+  }
 }
+
+#prev:hover {
+  i {
+    transform: translate(-5px, 2px);
+  }
+}
+
+#next:hover {
+  i {
+    transform: translate(5px, 2px);
+  }
+}
+
 .page-link {
   width: 20px;
   height: 20px;
@@ -20,6 +53,11 @@
     cursor: pointer;
   }
 }
+
+.page-link:first-of-type{
+  margin-left: 0;
+}
+
 
 .active-page-link {
   background-color: white;
