@@ -1,6 +1,8 @@
 $(function() {
   //prev and next arrow
   $('#prev').click(function() {
+    $('.description').hide();
+    $('.featured-project').show();
     let pageLinks = ['.page-link1', '.page-link2', '.page-link3', '.page-link4', '.page-link5'];
     for (var i = 0; i < pageLinks.length; i++) {
       if ($(pageLinks[i]).hasClass("active-page-link")) {
@@ -14,6 +16,8 @@ $(function() {
     }
   });
   $('#next').click(function() {
+    $('.description').hide();
+    $('.featured-project').show();
     let pageLinks = ['.page-link1', '.page-link2', '.page-link3', '.page-link4', '.page-link5'];
     for (var i = 0; i < pageLinks.length; i++) {
       if ($(pageLinks[i]).hasClass("active-page-link")) {
@@ -27,8 +31,16 @@ $(function() {
     }
   });
 
+  //show more info
+  $('.learn-more').click(function() {
+    $('.featured-project').hide();
+    $('.description').show();
+  });
+
   //pagination
   $('.page-link1').click(function() {
+      $('.description').hide();
+      $('.featured-project').show();
       $('.page-link').removeClass('active-page-link');
       $('.page-link1').addClass('active-page-link');
       $('.feature-wrapper').hide();
@@ -38,6 +50,8 @@ $(function() {
       $('body').css('background', '#000');
   });
   $('.page-link2').click(function() {
+      $('.description').hide();
+      $('.featured-project').show();
       $('.page-link').removeClass('active-page-link');
       $('.page-link2').addClass('active-page-link');
       $('.feature-wrapper').hide();
@@ -47,6 +61,8 @@ $(function() {
       $('body').css('background', '#542908');
   });
   $('.page-link3').click(function() {
+      $('.description').hide();
+      $('.featured-project').show();
       $('.page-link').removeClass('active-page-link');
       $('.page-link3').addClass('active-page-link');
       $('.feature-wrapper').hide();
@@ -56,6 +72,8 @@ $(function() {
       $('body').css('background', '#004380');
   });
   $('.page-link4').click(function() {
+      $('.description').hide();
+      $('.featured-project').show();
       $('.page-link').removeClass('active-page-link');
       $('.page-link4').addClass('active-page-link');
       $('.feature-wrapper').hide();
@@ -65,6 +83,8 @@ $(function() {
       $('body').css('background', '#3e5800');
   });
   $('.page-link5').click(function() {
+      $('.description').hide();
+      $('.featured-project').show();
       $('.page-link').removeClass('active-page-link');
       $('.page-link5').addClass('active-page-link');
       $('.feature-wrapper').hide();

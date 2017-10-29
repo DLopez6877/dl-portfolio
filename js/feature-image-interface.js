@@ -1,4 +1,11 @@
 $(function() {
+  //page load intro
+  $('#grid').hide();
+  setTimeout(function(){
+    $('#intro').hide();
+    $('#grid').fadeIn(1500);
+  }, 2500);
+
   //move large image
   $('.featured-image').css("background-position", "" + $('.featured-image')[0].offsetWidth + "");
   $('html').mousemove(function(e) {
