@@ -4,13 +4,14 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  h2 {
-    margin-bottom: 0;
-    @media screen and (max-height: 900px) {
-      display: none;
-    }
-    text-align: center;
+  @media (max-width: 850px) {
+    flex-direction: column-reverse;
   }
+}
+
+h2 {
+  margin-bottom: 0;
+  text-align: center;
 }
 
 .feature-wrapper {
@@ -62,12 +63,36 @@
   &:hover {
     border-color: #aaa #ccc #fff #ccc;
   }
+  @media (max-width: 400px) {
+    font-size: 14px;
+  }
+}
+
+.back-overview {
+  text-align: center;
+  font-family: 'benton thin';
+  font-size: 16px;
+  transition: all .2s cubic-bezier(0.65, 0.69, 0.87, 1.5);
+  cursor: pointer;
+  color: $accent-color;
+  i {
+    transition: all .2s cubic-bezier(0.65, 0.69, 0.87, 1.5);
+    display: inline-block;
+    transform: translate(-8px, 2px);
+  }
+  &:hover {
+    i {
+      transform: translate(-14px, 2px);
+    }
+  }
 }
 
 .description {
   display: none;
   margin-bottom: 30px;
-  text-align: justify;
+  h3 {
+    border-bottom: 1px solid white;
+  }
   a {
     color: $accent-color;
   }

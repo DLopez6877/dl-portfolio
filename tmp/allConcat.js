@@ -100,6 +100,12 @@ $(function() {
     $('.description').show();
   });
 
+  //return to overview pages
+  $('.back-overview').click(function() {
+    $('.description').hide();
+    $('.featured-project').show();
+  });
+
   //pagination
   $('.page-link1').click(function() {
       $('.description').hide();

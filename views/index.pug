@@ -72,13 +72,15 @@ html
           .page-link.page-link4
           .page-link.page-link5
           h5 <span id="prev"><i>←</i> previous</span> | <span id="next">next <i>→</i></span>
+          .back-overview#pagination-overviews <i>←</i>view overviews
       .feature-wrapper#project1
+        h2 P.O.L.L.I.
         .featured-project
-          h2 P.O.L.L.I.
           .tldr
             h5 The robotic arm that you can control with hand motion or through a mobile-friendly website.
             h5 Technologies: Node.js, Socket.io, Johnny-Five, Express, Leap Motion Controller, Arduino Uno, JQuery
-            #project1-more.learn-more Learn more
+            a(href="#projects-anchor")
+              #project1-more.learn-more Learn more
           .additional-infos
             a(href="https://sigtaba.github.io/P.O.L.L.I/")
               .additional-info View Site
@@ -89,11 +91,19 @@ html
           .featured-project-image.project1
             img(src="/assets/images/devices1.png")
         .description
-          p P.O.L.L.I is an interactive robotic arm that can be controlled through a mobile-friendly website or by hand motion. The project was proposed by John Dowd during week 5 of the Javascript course at Epicodus. Pete Lazuran, Isabella Abatgis, and myself quickly signed on as members. 
-          p The project was created using Johnny-Five to write the robotic-specific methods in JavaScript and using express as middleware to make the user-interface.
+          h3 About
+          h5 P.O.L.L.I. was created over the span of 6 days at Epicodus. Isabella Abatgis and I paired with John Dowd and Pete Lazuran from the C# cohort to create something that had never been done at Epicodus before. A robotic arm that mimics your hand motion and saves a log of it's movements to a database for data analytics.
+          h3 My roles
+          h5 Build robot, Johnny-Five, MongoDB, express middleware, front-end interface, project proposal, and README.md
+          h3 Process
+          h5 The first two days of the project were spent physically building the robot as a team and doing research. We made a document that outlined the project plan and formally proposed the idea to the instructor for approval. Once the arm was constructed I began setting up a MEAN stack application and running tests to communicate with an LED from the web browser. By the weekend I was able to control the LED but was unable to successfully communicate with the robots board through the arduino.
+          h5 The following Monday we had a breakthrough when we removed the robotic arms board and connected the servo motors directly to the arduino board. Unfortunately, the breakthrough was only working on a simple test server we had setup without the MEAN stack and due to the short timeframe we abandoned the MEAN stack repository. I knew I was close to getting everything to work which later motivated me to make a drink mixing robot.
+          h5 From that point forward, I focused my attention on working with Isabella to design to build the interface while John and Pete worked on logging the movements and connecting the input fields to the Johnny-Five methods.
+          a(href="#projects-anchor")
+            .back-overview <i>←</i>back to overview
       .feature-wrapper#project2.initially-hidden
+        h2 ⑇simpleColor
         .featured-project
-          h2 ⑇simpleColor
           .tldr
             h5 A color theory website that allows you to say or type a color and receive color pallette information without all the confusing gizmos.
             h5 Technologies: Gulp, NPM, p5.speech.js, tinycolor.js, thecolorapi, JQuery, Ajax, Sass
@@ -109,8 +119,8 @@ html
           p Dad Joke Generator was a group project created during the CSS course at Epicodus. Members were Corey Redding, Justin Gomez, Calvin Cushman, and Daniel Lopez. The project was created over 4 days. All the images on the home screen were drawn by Corey Redding. 
           p Corey primarily worked on the drawings and then animations. Justin and Calvin primarily worked on adding jokes and then animations. I worked on migrating the animations from code pen, user-interface, and layout.
       .feature-wrapper#project3.initially-hidden
+        h2 Find a Doctor
         .featured-project
-          h2 Find a Doctor
           .tldr
             h5 Need a doctor? Enter a symptom and and address to find up to 20 doctors nearby. Receive contact information, a brief description, and a list of their specialties.
             h5 Technologies: BetterDoctor Api, Google Maps Api, Gulp, Bower, NPM, JQuery, Sass
@@ -126,8 +136,8 @@ html
           p Find a Doctor was an independent project created during the Javascript course at Epicodus. The project was created over one weekend and was designed to test our knowledge of api calls and gulp. Uses both betterdoctor api and googlemaps api.
           p I wanted to design the webpage to have a friendly medical feel so I went with the color blue. The layout was loosly based off of a DevTips (Devin Allen) <a href="https://www.youtube.com/watch?v=jMW0bmrb2n4">youtube video</a> about full screen models and splash pages.
       .feature-wrapper#project4.initially-hidden
+        h2 Drinken
         .featured-project
-          h2 Drinken
           .tldr
             h5 Connect to this robotic bartender on your phone and select a drink from a menu and select the size you want. Drinken will pour it. You are also able to create, remove, update, and delete drink recipes from the beautiful user-friendly interface.
             h5 Technologies: MongoDB, Express, Angular, Node.js, Cura, Johnny-Five, Arduino Nano, Sass
@@ -144,8 +154,8 @@ html
           p Technologies used: MongoDB, Express.js, Angular2, Node.js, Johnny-Five, Sass, Cura(3d printing)
           p I decided to do this project because while researching how to build a robotic arm (P.O.L.L.I.) I came across a lot of similar automated bartender projects. One of which was from <a href="http://yujiangtham.com/2014/05/25/build-your-very-own-drink-mixing-robot-part-1/">Yu Jiang Tham</a> who provided .STL files for the structure that could be 3d printed and a great reference at times.
       .feature-wrapper#project5.initially-hidden
+        h2 Weekend Project Portfolio
         .featured-project
-          h2 Weekend Project Portfolio
           .tldr
             h5 This is a portfolio that was created over a weekend as an independent project assignment. I decided to showcase this project because it features many other projects I did during the earlier stages of my time at Epicodus. A few of the projects are not responsive because they were created before I was familiar with the concept.
             h5 Technologies: JQuery, Sass
