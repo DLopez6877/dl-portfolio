@@ -45,7 +45,7 @@ html
       //-     lego photo provided by Daniel Cheung
     .container#about-container.initially-hidden
       .container-head
-        h1 About
+        h1 About Me
       p#bio Daniel Lopez is a web developer, web designer, and full-time geek. He spends most of his time inside his humble abode in front of his computer in Vancouver, WA. Although he is a simple man, he likes to dabble in complex theories and considers himself a tinker of things and stuff. You could imagine his excitement when he discovered Arduino boards for the first time a few months ago. Can you say, “instant hobby”? Although his bio is a bit odd and he is referring to himself in the third person, Daniel is a delightful character that strides headfirst into new challenges.
       ul
         li 
@@ -141,7 +141,13 @@ html
             img(src="/assets/images/devices3.png")
         .description
           h3 About
+          h5 Find a doctor was an independent project created over one weekend. This was an assignment during the JavaScript course at Epicodus to test our knowledge of working with api's. The bonus prompt for the assignment was to create a "friendly" site.
+          h3 Design Choices
+          h5 In the persuit of making my site "friendly" I researched color theory for different "friendly" colors and compared those colors to different doctor related websites. I found an overwhelming use of the color blue in medical sites which was perfect because blue gives a calming, relaxed feeling. My favorite part of the webpage is the splash page. I found a wonderful, relaxing doctor image from unsplash.com and make a relatable tagline of "need a doctor?". 
+          h5 The call to action button originally said "find a doctor now". I added the two arrows after asking my roommate to take a look at the site, I noticed he paused for a bit and had to think becuase he wasn't sure where to go from the landing page.
           h3 Process
+          h5 The requirements to pass the test were to simply append information from the better doctor api onto the page. However, the better doctor api uses latitude and longitude in the api call and I have never seen a website ask for my lat and lon instead of an address so that wasn't going to pass my standards. It wasn't long until I found the google maps api for geolocation and added that to solve the problem.
+          h5 The most challenging part of the code for me was making all the doctors appear as though they were in one module. At the time I was unfamilar with the concept of javascript wireframes and making module templates with dynamic information so I had to get a bit creative. I appended all the information into individual components and relatively positioned them on top of eachother. Then created a JavaScript function to compare the clicked list item with all the h1's on the page and if the inner HTML matched I displayed that headers parent and hid all of that parents siblings.
           a(href="#projects-anchor")
             .back-overview <i>←</i>back to overview
       .feature-wrapper#project4.initially-hidden
