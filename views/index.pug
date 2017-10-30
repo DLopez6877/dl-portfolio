@@ -72,7 +72,6 @@ html
           .page-link.page-link4
           .page-link.page-link5
           h5 <span id="prev"><i>←</i> previous</span> | <span id="next">next <i>→</i></span>
-          .back-overview#pagination-overviews <i>←</i>view overviews
       .feature-wrapper#project1
         h2 P.O.L.L.I.
         .featured-project
@@ -80,7 +79,7 @@ html
             h5 The robotic arm that you can control with hand motion or through a mobile-friendly website.
             h5 Technologies: Node.js, Socket.io, Johnny-Five, Express, Leap Motion Controller, Arduino Uno, JQuery
             a(href="#projects-anchor")
-              #project1-more.learn-more Learn more
+              .learn-more Learn more
           .additional-infos
             a(href="https://sigtaba.github.io/P.O.L.L.I/")
               .additional-info View Site
@@ -107,7 +106,8 @@ html
           .tldr
             h5 A color theory website that allows you to say or type a color and receive color pallette information without all the confusing gizmos.
             h5 Technologies: Gulp, NPM, p5.speech.js, tinycolor.js, thecolorapi, JQuery, Ajax, Sass
-            #project2-more.learn-more Learn more
+            a(href="#projects-anchor")
+              .learn-more Learn more
           .additional-infos
             a(href="https://dlopez6877.github.io/simpleColor/")
               .additional-info View Site
@@ -116,15 +116,22 @@ html
           .featured-project-image.project2
             img(src="/assets/images/devices2.png")
         .description
-          p Dad Joke Generator was a group project created during the CSS course at Epicodus. Members were Corey Redding, Justin Gomez, Calvin Cushman, and Daniel Lopez. The project was created over 4 days. All the images on the home screen were drawn by Corey Redding. 
-          p Corey primarily worked on the drawings and then animations. Justin and Calvin primarily worked on adding jokes and then animations. I worked on migrating the animations from code pen, user-interface, and layout.
+          h3 About
+          h5 I was frustrated with all the extra features color pallette sites have so I created simple color. The idea is to make it as simple as possible to enter a color and get back hexcodes of the related colors you want.
+          h3 Process
+          h5 I began ⑇simpleColor during the "bring your own project night" at the monthly front-end PDX meetup I attend. At the time, the only project I was working on was for my internship at ScoutSavvy and I wanted to work on something new. I kept everything to one font, vanilla css, and no javascript framework to keep with the theme of a simple website.
+          h5 The original idea was to do the calculations on converting a hexcode into different color combinations but during research I discovered tinycolor.js which had most of the information I already wanted. Later on I decided to add the voice recognition because "Code Train" (a youtube channel I enjoy about p5.js) introduced the new p5 speech recognition addon developed by NYU. Once I had reached mvp I sent a link to my former epicodus classmates asking for feedback.
+          h5 After getting some user feedback, I added the neutral colors, added safeguards on double clicking the hexcodes which was copying the string "COPIED!" to the clipboard, made it so that the text is highlighted when you click on the input field, and other minor bugs related to the speech input.
+          a(href="#projects-anchor")
+            .back-overview <i>←</i>back to overview
       .feature-wrapper#project3.initially-hidden
         h2 Find a Doctor
         .featured-project
           .tldr
             h5 Need a doctor? Enter a symptom and and address to find up to 20 doctors nearby. Receive contact information, a brief description, and a list of their specialties.
             h5 Technologies: BetterDoctor Api, Google Maps Api, Gulp, Bower, NPM, JQuery, Sass
-            #project3-more.learn-more Learn more
+            a(href="#projects-anchor")
+              .learn-more Learn more
           .additional-infos
             a(href="https://dlopez6877.github.io/doctor-api/")
               .additional-info View Site
@@ -133,15 +140,18 @@ html
           .featured-project-image.project3
             img(src="/assets/images/devices3.png")
         .description
-          p Find a Doctor was an independent project created during the Javascript course at Epicodus. The project was created over one weekend and was designed to test our knowledge of api calls and gulp. Uses both betterdoctor api and googlemaps api.
-          p I wanted to design the webpage to have a friendly medical feel so I went with the color blue. The layout was loosly based off of a DevTips (Devin Allen) <a href="https://www.youtube.com/watch?v=jMW0bmrb2n4">youtube video</a> about full screen models and splash pages.
+          h3 About
+          h3 Process
+          a(href="#projects-anchor")
+            .back-overview <i>←</i>back to overview
       .feature-wrapper#project4.initially-hidden
         h2 Drinken
         .featured-project
           .tldr
             h5 Connect to this robotic bartender on your phone and select a drink from a menu and select the size you want. Drinken will pour it. You are also able to create, remove, update, and delete drink recipes from the beautiful user-friendly interface.
             h5 Technologies: MongoDB, Express, Angular, Node.js, Cura, Johnny-Five, Arduino Nano, Sass
-            #project4-more.learn-more Learn more
+            a(href="#projects-anchor")
+              .learn-more Learn more
           .additional-infos
             a(href="https://github.com/DLopez6877/drinken")
               .additional-info View Code
@@ -159,7 +169,8 @@ html
           .tldr
             h5 This is a portfolio that was created over a weekend as an independent project assignment. I decided to showcase this project because it features many other projects I did during the earlier stages of my time at Epicodus. A few of the projects are not responsive because they were created before I was familiar with the concept.
             h5 Technologies: JQuery, Sass
-            #project5-more.learn-more Learn more
+            a(href="#projects-anchor")
+              .learn-more Learn more
           .additional-infos
             a(href="http://rawgit.com/dlopez6877/portfolio-redux/master/portfolio.html")
               .additional-info View Site
