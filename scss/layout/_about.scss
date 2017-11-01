@@ -1,0 +1,31 @@
+#about-container {
+  .flex-wrapper {
+    display: flex;
+    flex-direction: column;
+    @media (max-width: 550px) {
+      #bio {
+        margin: 0 20px 30px;
+      }
+      .three-rows:not(:last-child) {
+        margin: auto;
+        flex-direction: column;
+        width: 80%;
+        order: 1;
+      }
+    }
+  }
+  #bio {
+    text-indent: 30px;
+  }
+  .skill {
+    margin: 0 10px;
+  }
+  p {
+    font-size: 16px;
+    text-align: center;
+  }
+  .th {
+    font-family: 'goudy';
+    border-bottom: 1px solid white;
+  }
+}

@@ -7,41 +7,17 @@ nav {
     font-family: 'benton thin';
     text-align: center;
     padding: 0;
-    height: calc(100vh - 400px);
-    justify-content: space-around;
-    @media (max-height: 500px) {
-      justify-content: space-between;
-      height: auto;
-      li {
-        margin: 0 auto;
-      }
-    }
-    @media (max-height: 800px) {
-      height: auto;
-    }
     @media (max-width: 850px) {
+      justify-content: space-around;
       flex-direction: row;
       flex-wrap: wrap;
       margin: 20px 20px 0 20px;
-      height: auto;
     }
   }
   li {
+    margin-top: 30px;
     padding: 10px;
     line-height: 20px;
     @extend %link-hover;
-  }
-
-  .contact-info {
-    a {
-      @extend %link-hover;
-      p {
-        margin: 10px;
-      }
-    }
-    @media (max-width: 850px) {
-      margin-top: 30px;
-      flex: 0 1 100%;
-    }
   }
 }

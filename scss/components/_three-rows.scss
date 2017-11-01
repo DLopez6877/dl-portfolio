@@ -1,0 +1,14 @@
+.three-rows {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  font-family: 'benton thin';
+  margin-bottom: 20px;
+  i {
+    color: white;
+    font-size: 35px;
+    &:hover {
+      animation: blink .1s infinite;
+    }
+  }
+}

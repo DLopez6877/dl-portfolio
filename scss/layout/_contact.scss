@@ -1,0 +1,76 @@
+#contact-container {
+  margin-bottom: 20px;
+  form {
+    @media (max-width: 550px) {
+      margin: 0 20px;
+    }
+  }
+  p {
+    text-align: center;
+    font-size: 16px;
+    margin: 0px 0 10px 0;
+    @media (min-width: 1080px) {
+      font-size: 20px;
+    }
+  }
+  .three-rows {
+    margin-top: 30px;
+  }
+  input, textarea {
+    font-family: 'benton book';
+    width: 100%;
+    display: block;
+    margin: 20px auto;
+    border: 2px solid transparent;
+    outline-color: $accent-color;
+    height: 30px;
+    letter-spacing: .5px;
+    font-size: 13px;
+    line-height: 18px;
+    &:focus {
+      outline: none;
+    }
+  }
+  input {
+    color: white;
+    background-color: transparent;
+    border-bottom: 1px dashed white;
+    &:focus {
+      border-bottom: 1px dashed $accent-color;
+    }
+  }
+  textarea {
+    font-family: 'benton thin';
+    color: white;
+    border: 1px solid white;
+    background-color: fade-out(white, .9);
+    padding: 7px 5px;
+    border-radius: 5px;
+    height: 100px;
+    resize: vertical;
+    &:focus {
+      border: 1px solid $accent-color;
+    }
+  }
+  button {
+    display: block;
+    width: 100px;
+    margin: 0 auto;
+    background-color: transparent;
+    color: white;
+    border-radius: 0;
+    font-size: 16px;
+    font-family: 'benton thin';
+    padding: 5px 0 3px;
+    cursor: pointer;
+    transition: .2s all ease-out;
+    &:hover {
+      background-color: fade-out(white, .9);
+      border-color: $accent-color;
+      color: $accent-color;
+    }
+    &:focus {
+      outline: none;
+    }
+  }
+}

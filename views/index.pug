@@ -2,6 +2,7 @@ html
   head
     title Daniel Lopez
     meta(name="viewport" content="width=device-width, initial-scale=1")
+    script(src="https://use.fontawesome.com/4bcafbfb2f.js")
     script(src="/js/jquery-3.2.1.min.js")
     script(src="build/js/app.js")
     link(rel="stylesheet" type="text/css" href="build/css/styles.css")
@@ -27,15 +28,6 @@ html
         a(href="https://github.com/DLopez6877")
           li My Github
         li.contact-nav Contact
-        .contact-info.initially-hidden
-          a(href='https://www.linkedin.com/in/dlopez6877/')
-            .icon
-              img(src='/assets/images/linkedin-icon.png')
-            p LinkedIn
-          a(href='mailto:dlopez6877@gmail.com')
-            .icon
-              img(src='/assets/images/email-icon.png')
-            p Gmail
     .featured-image
       //-  all photos taken from unsplash.com
       //-     robot photo provided by Siyan Ren
@@ -46,22 +38,62 @@ html
     .container#about-container.initially-hidden
       .container-head
         h1 About Me
-      p#bio Daniel Lopez is a web developer, web designer, and full-time geek. He spends most of his time inside his humble abode in front of his computer in Vancouver, WA. Although he is a simple man, he likes to dabble in complex theories and considers himself a tinker of things and stuff. You could imagine his excitement when he discovered Arduino boards for the first time a few months ago. Can you say, “instant hobby”? Although his bio is a bit odd and he is referring to himself in the third person, Daniel is a delightful character that strides headfirst into new challenges.
-      ul
-        li 
-          a(href="https://codepen.io/DLopez6877/") Codepen: <span>https://codepen.io/DLopez6877/</span>
-        br
-        br
-        li Employment Status: <span>Looking for a job.</span>
-        br
-        li Favorite Book: <span>Ready Player One</span>
-        br
-        li Favorite TV Show: <span>Rick and Morty</span>
-        br
-        li Favorite Video Game: <span>Fifa</span>
-        br
-        li Favorite Soccer Team: <span>Portland Timbers</span>
-        br
+      .flex-wrapper
+        .three-rows
+          .skill
+            p.th Languages
+            p JavaScript
+            p Python3
+            p CSS
+            p HTML
+          .skill
+            p.th Frameworks / Libraries
+            p Angular
+            p React
+            p p5.js
+            p D3.js
+            p JQuery
+            p Sass
+            p Bootstrap
+            p Pug.js (jade)
+          .skill
+            p.th Skills
+            p Jupyter
+            p MongoDB
+            p Express
+            p Node
+            p Git
+            p Gulp
+            p Firebase
+        h5#bio I am a web developer, web designer, and full-time geek. I enjoy making websites, working with data, and all things soccer. I recently graduated from Epicodus, a coding bootcamp in Portland, OR and I am currently attending a data science course online through Thinkful. I am currently seeking front-end developer opportunities in Portland, Vancouver, and Atlanta but willing to relocate.
+        .three-rows
+          a(href="https://codepen.io/DLopez6877/")
+            <i class="fa fa-codepen" aria-hidden="true"></i>
+          a(href="https://github.com/dlopez6877")
+            <i class="fa fa-github" aria-hidden="true"></i>
+          a(href="https://www.linkedin.com/in/dlopez6877/")
+            <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+    .container#contact-container.initially-hidden
+      .container-head
+        h1 Contact
+      p I am currently seeking opportunities in
+      p Portland, Vancouver, and Atlanta
+      p but willing to relocate.
+      .three-rows
+        a(href="https://codepen.io/DLopez6877/")
+          <i class="fa fa-codepen" aria-hidden="true"></i>
+        a(href="https://github.com/dlopez6877")
+          <i class="fa fa-github" aria-hidden="true"></i>
+        a(href="https://www.linkedin.com/in/dlopez6877/")
+          <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+      h2 Send me an email
+      form(action="https://formspree.io/dlopez6877@gmail.com"
+      method="POST")
+        input(type="text" name="name" placeholder="Your name" required)
+        input(type="email" name="email address" placeholder="Your email" required)
+        input(type="text" name="subject" placeholder="Subject" required)
+        textarea(name="message" placeholder="Message" required)
+        button(type="submit") Send
     .container#project-container
       #projects-anchor.container-head
         h1 Projects
@@ -71,7 +103,8 @@ html
           .page-link.page-link3
           .page-link.page-link4
           .page-link.page-link5
-          h5 <span id="prev"><i>←</i> previous</span> | <span id="next">next <i>→</i></span>
+          .arrow#prev ←
+          .arrow#next →
       .feature-wrapper#project1
         h2 P.O.L.L.I.
         .featured-project
@@ -80,7 +113,7 @@ html
             h5 Technologies: Node.js, Socket.io, Johnny-Five, Express, Leap Motion Controller, Arduino Uno, JQuery
             a(href="#projects-anchor")
               .learn-more Learn more
-          .additional-infos
+          .three-rows
             a(href="https://sigtaba.github.io/P.O.L.L.I/")
               .additional-info View Site
             a(href="https://github.com/irishdowd10/P.O.L.L.I")
@@ -90,6 +123,8 @@ html
           .featured-project-image.project1
             img(src="/assets/images/devices1.png")
         .description
+          a(href="#projects-anchor")
+            .back-overview <i>←</i>back to overview
           h3 About
           h5 P.O.L.L.I. was created over the span of 6 days at Epicodus. Isabella Abatgis and I paired with John Dowd and Pete Lazuran from the C# cohort to create something that had never been done at Epicodus before. A robotic arm that mimics your hand motion and saves a log of it's movements to a database for data analytics.
           h3 My roles
@@ -108,7 +143,7 @@ html
             h5 Technologies: Gulp, NPM, p5.speech.js, tinycolor.js, thecolorapi, JQuery, Ajax, Sass
             a(href="#projects-anchor")
               .learn-more Learn more
-          .additional-infos
+          .three-rows
             a(href="https://dlopez6877.github.io/simpleColor/")
               .additional-info View Site
             a(href="https://github.com/DLopez6877/simpleColor")
@@ -116,6 +151,8 @@ html
           .featured-project-image.project2
             img(src="/assets/images/devices2.png")
         .description
+          a(href="#projects-anchor")
+            .back-overview <i>←</i>back to overview
           h3 About
           h5 I was frustrated with all the extra features color pallette sites have so I created simple color. The idea is to make it as simple as possible to enter a color and get back hexcodes of the related colors you want.
           h3 Process
@@ -132,7 +169,7 @@ html
             h5 Technologies: BetterDoctor Api, Google Maps Api, Gulp, Bower, NPM, JQuery, Sass
             a(href="#projects-anchor")
               .learn-more Learn more
-          .additional-infos
+          .three-rows
             a(href="https://dlopez6877.github.io/doctor-api/")
               .additional-info View Site
             a(href="https://github.com/DLopez6877/doctor-api")
@@ -140,6 +177,8 @@ html
           .featured-project-image.project3
             img(src="/assets/images/devices3.png")
         .description
+          a(href="#projects-anchor")
+            .back-overview <i>←</i>back to overview
           h3 About
           h5 Find a doctor was an independent project created over one weekend. This was an assignment during the JavaScript course at Epicodus to test our knowledge of working with api's. The bonus prompt for the assignment was to create a "friendly" site.
           h3 Design Choices
@@ -158,7 +197,7 @@ html
             h5 Technologies: MongoDB, Express, Angular, Node.js, Cura, Johnny-Five, Arduino Nano, Sass
             a(href="#projects-anchor")
               .learn-more Learn more
-          .additional-infos
+          .three-rows
             a(href="https://invis.io/F9D6XWWZV")
               .additional-info Prototype
             a(href="https://github.com/DLopez6877/drinken")
@@ -168,6 +207,8 @@ html
           .featured-project-image.project4
             img(src="/assets/images/devices4.png")
         .description
+          a(href="#projects-anchor")
+            .back-overview <i>←</i>back to overview
           h3 About
           h5 Drinken was my capstone project for Epicodus and I presented it at my classes demo day. I was inspired to make this drink mixing robot because I had learned a large deal about Arduino boards and Johnny-Five(javascript robotics library) while working on the P.O.L.L.I. robotic arm project and wanted to extend that knowledge. I wanted to use the MEAN stack because I was never able to fully implement it into the robotic arm project and I had the knowledge to make it work.
           h3 Design Choices
@@ -185,11 +226,11 @@ html
         h2 Weekend Project Portfolio
         .featured-project
           .tldr
-            h5 This is a portfolio that was created over a weekend as an independent project assignment. I decided to showcase this project because it features many other projects I did during the earlier stages of my time at Epicodus. A few of the projects are not responsive because they were created before I was familiar with the concept.
+            h5 A portfolio that was created over the course of one weekend for an assignment at epicodus. Features early projects from my time at Epicodus and demonstrates my growth as a developer.
             h5 Technologies: JQuery, Sass
             a(href="#projects-anchor")
               .learn-more Learn more
-          .additional-infos
+          .three-rows
             a(href="http://rawgit.com/dlopez6877/portfolio-redux/master/portfolio.html")
               .additional-info View Site
             a(href="https://github.com/DLopez6877/portfolio-redux")
@@ -197,7 +238,15 @@ html
           .featured-project-image.project4
             img(src="/assets/images/devices5.png")
         .description
-          p This is a portfolio that was created over a weekend as an independent project assignment. I decided to showcase this project because it features many other projects I did during the earlier stages of my time at Epicodus. A few of the projects are not responsive because they were created before I was familiar with the concept.
-          p The resume and contact links are not completed since I originally planned to come back and complete those pages but ended up deciding I didn't like the direction this portfolio was going.
+          a(href="#projects-anchor")
+            .back-overview <i>←</i>back to overview
+          h3 Favorite
+          h5 If you get the chance, check out the pokemon gameboy game. It isn't featured very high because it was created before I was familiar with the idea of responsive design but if you played Pokemon you may find it very nostalgic.
+          h5 I plan on rebuilding the Gameboy in React with multiple games to choose from.
+          h3 Disclaimer
+          h5 A few of the projects are not responsive because they were created before I was familiar with the concept.
+          h5 The resume and contact links are not completed since I originally planned to come back and complete those pages but ended up deciding I didn't like the direction this portfolio was going and abandoned the links.
+          a(href="#projects-anchor")
+            .back-overview <i>←</i>back to overview
     footer
       .copy © Daniel J. Lopez

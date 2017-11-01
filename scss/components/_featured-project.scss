@@ -47,21 +47,14 @@ h2 {
   }
 }
 
-.additional-infos {
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  font-family: 'benton thin';
-  margin-bottom: 20px;
-}
 
 .additional-info {
-  border: 1px solid;
-  border-color: transparent transparent white transparent;
-  padding: 10px 10px 6px 10px;
+  padding: 10px 10px 1px 10px; //1px for border transition
   @extend %link-hover;
   &:hover {
-    border-color: #aaa #ccc #fff #ccc;
+    border-bottom: 1px solid $accent-color;
+    padding-bottom: 7px;
+    margin-bottom: -7px;
   }
   @media (max-width: 400px) {
     font-size: 14px;
