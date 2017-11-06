@@ -35,6 +35,20 @@ $(function() {
   $('.learn-more').click(function() {
     $('.featured-project').hide();
     $('.description').show();
+    //show scroll inicator if container larger than screen
+    var element = document.querySelector('#project-container');
+    if (element.offsetHeight < element.scrollHeight ||
+    element.offsetWidth < element.scrollWidth) {
+      //element has overflow
+      $('.scroll-indicator').show();
+    }
+  });
+
+  //hide scroll-indicator on scroll down
+  $( "#project-container" ).scroll(function() {
+    if ($(this).scrollTop() > 0) {
+      $('.scroll-indicator').fadeOut();
+    }
   });
 
   //return to overview pages
@@ -63,8 +77,8 @@ $(function() {
       $('.feature-wrapper').hide();
       $('#project2').show();
       $('.featured-project-image').html('<img src="/assets/images/devices2.png">');
-      $('.featured-image').css('background-image', 'url(/assets/images/daniel-cheung.jpg)');
-      $('body').css('background', '#542908');
+      $('.featured-image').css('background-image', 'url(/assets/images/joanna-kosinska.jpg)');
+      $('body').css('background', '#3e5800');
   });
   $('.page-link3').click(function() {
       $('.description').hide();
@@ -85,8 +99,8 @@ $(function() {
       $('.feature-wrapper').hide();
       $('#project4').show();
       $('.featured-project-image').html('<img src="/assets/images/devices4.png">');
-      $('.featured-image').css('background-image', 'url(/assets/images/joanna-kosinska.jpg)');
-      $('body').css('background', '#3e5800');
+      $('.featured-image').css('background-image', 'url(/assets/images/daniel-cheung.jpg)');
+      $('body').css('background', '#542908');
   });
   $('.page-link5').click(function() {
       $('.description').hide();

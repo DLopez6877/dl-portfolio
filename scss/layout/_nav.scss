@@ -14,10 +14,30 @@ nav {
       margin: 20px 20px 0 20px;
     }
   }
+  .active-link {
+    transform: scale(.9);
+    opacity: .6;
+    position: relative;
+    &::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 150px;
+      height: 2px;
+      background-color: $accent-color;
+    }
+  }
   li {
     margin-top: 30px;
     padding: 10px;
     line-height: 20px;
-    @extend %link-hover;
+    position: relative;
+    cursor: pointer;
+    transition: all .3s ease-in;
+    &:hover {
+      @extend .active-link;
+    }
   }
 }

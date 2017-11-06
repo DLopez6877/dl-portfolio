@@ -23,7 +23,7 @@ html
     nav
       ul#nav-ul
         a(href="#projects-anchor")
-          li.projects-nav Projects
+          li.projects-nav.active-link Projects
         li.about-nav About Me
         a(href="https://github.com/DLopez6877")
           li My Github
@@ -65,7 +65,7 @@ html
             p Git
             p Gulp
             p Firebase
-        h5#bio I am a web developer, web designer, and full-time geek. I enjoy making websites, working with data, and all things soccer. I recently graduated from Epicodus, a coding bootcamp in Portland, OR and I am currently attending a data science course online through Thinkful. I am currently seeking front-end developer opportunities in Portland, Vancouver, and Atlanta but willing to relocate.
+        h5#bio I am a web developer, web designer, and full-time geek. I enjoy making websites, working with data, and all things soccer. I recently graduated from Epicodus, a coding bootcamp in Portland, OR and I am currently enrolled in a data science course online through Thinkful. I am currently seeking job opportunities in Portland, Vancouver, and Atlanta.
         .three-rows
           a(href="https://codepen.io/DLopez6877/")
             <i class="fa fa-codepen" aria-hidden="true"></i>
@@ -76,9 +76,8 @@ html
     .container#contact-container.initially-hidden
       .container-head
         h1 Contact
-      p I am currently seeking opportunities in
-      p Portland, Vancouver, and Atlanta
-      p but willing to relocate.
+      p I am currently seeking job opportunities in
+      p Portland, Vancouver, and Atlanta.
       .three-rows
         a(href="https://codepen.io/DLopez6877/")
           <i class="fa fa-codepen" aria-hidden="true"></i>
@@ -95,6 +94,12 @@ html
         textarea(name="message" placeholder="Message" required)
         button(type="submit") Send
     .container#project-container
+      .scroll-indicator
+        .mouse
+        div
+          span(class="eins")
+          span(class="zwei")
+          span(class="drei")
       #projects-anchor.container-head
         h1 Projects
         .pagination
@@ -112,7 +117,7 @@ html
             h5 The robotic arm that you can control with hand motion or through a mobile-friendly website.
             h5 Technologies: Node.js, Socket.io, Johnny-Five, Express, Leap Motion Controller, Arduino Uno, JQuery
             a(href="#projects-anchor")
-              .learn-more Learn more
+              p.learn-more Learn more
           .three-rows
             a(href="https://sigtaba.github.io/P.O.L.L.I/")
               .additional-info View Site
@@ -136,29 +141,37 @@ html
           a(href="#projects-anchor")
             .back-overview <i>←</i>back to overview
       .feature-wrapper#project2.initially-hidden
-        h2 ⑇simpleColor
+        h2 Drinken
         .featured-project
           .tldr
-            h5 A color theory website that allows you to say or type a color and receive color pallette information without all the confusing gizmos.
-            h5 Technologies: Gulp, NPM, p5.speech.js, tinycolor.js, thecolorapi, JQuery, Ajax, Sass
+            h5 Connect to this robotic bartender on your phone and select a drink from a menu and select the size you want. Drinken will pour it. You are also able to create, remove, update, and delete drink recipes from the beautiful user-friendly interface. The site is only hosted locally on my Raspberry Pi 3 so I have a link to the invision prototype instead.
+            h5 Technologies: MongoDB, Express, Angular, Node.js, Cura, Johnny-Five, Arduino Nano, Sass
             a(href="#projects-anchor")
-              .learn-more Learn more
+              p.learn-more Learn more
           .three-rows
-            a(href="https://dlopez6877.github.io/simpleColor/")
-              .additional-info View Site
-            a(href="https://github.com/DLopez6877/simpleColor")
+            a(href="https://invis.io/F9D6XWWZV")
+              .additional-info Prototype
+            a(href="https://github.com/DLopez6877/drinken")
               .additional-info View Code
-          .featured-project-image.project2
+            a(href="https://youtu.be/Ove5rQImxyU")
+              .additional-info Video
+          .featured-project-image.project4
             img(src="/assets/images/devices2.png")
         .description
           a(href="#projects-anchor")
             .back-overview <i>←</i>back to overview
           h3 About
-          h5 I was frustrated with all the extra features color pallette sites have so I created simple color. The idea is to make it as simple as possible to enter a color and get back hexcodes of the related colors you want.
+          img(src='/assets/images/demoday.jpg')
+          h5 Drinken was my capstone project for Epicodus and I presented it at my class' demo day. I was inspired to make this drink mixing robot because I had learned a large deal about Arduino boards and Johnny-Five(javascript robotics library) while working on the P.O.L.L.I. robotic arm project and wanted to extend that knowledge. I wanted to use the MEAN stack because I was never able to fully implement it into the robotic arm project and I had the knowledge to make it work.
+          h3 Design Choices
+          h5 Drinken is dutch for "drink". I got the idea for the name from Keurig which is dutch for "neat". I drew a lot of inspiration from Keurig because they could both be considered kitchen appliances that are novelties. I originally designed the branding to be high energy and pop out at you with a kitchen esque vibe. 
+          img(src='/assets/images/drinken-design.png')
+          h5 But after getting feedback I did a complete 180 and changed the tone to more a regal feel. The final product uses maroonish red and earthy tones to make sense of elegance and novelty. I redesigned the drink options layout because it was too "tetrisy" and confusing.
+          img(src='/assets/images/user-stories.png')
           h3 Process
-          h5 I began ⑇simpleColor during the "bring your own project night" at the monthly front-end PDX meetup I attend. At the time, the only project I was working on was for my internship at ScoutSavvy and I wanted to work on something new. I kept everything to one font, vanilla css, and no javascript framework to keep with the theme of a simple website.
-          h5 The original idea was to do the calculations on converting a hexcode into different color combinations but during research I discovered tinycolor.js which had most of the information I already wanted. Later on I decided to add the voice recognition because "Code Train" (a youtube channel I enjoy about p5.js) introduced the new p5 speech recognition addon developed by NYU. Once I had reached mvp I sent a link to my former epicodus classmates asking for feedback.
-          h5 After getting some user feedback, I added the neutral colors, added safeguards on double clicking the hexcodes which was copying the string "COPIED!" to the clipboard, made it so that the text is highlighted when you click on the input field, and other minor bugs related to the speech input.
+          h5 I came across the idea while looking up arduino projects people had done and saw a lot of different variations of this project. Every project was using peristaltic pumps in one way or another but the most impressive overall structure I found was from 
+          h5 <a href="http://yujiangtham.com/2014/05/25/build-your-very-own-drink-mixing-robot-part-1/">Yu Jiang Tham</a> who not only 3d printed his structure but also provided .STL files for the structure to be used as open source. I didn't know anything about 3d printing so I asked around and heard about a free intro to 3d modeling class at the local library. I attended the very next class and three hours later I was ready to print my first piece on the library's 3d printer. It was the smallest piece and in an hour and 20 minutes later I had one out of 19 pieces. Unfortunately, this wasn't going to work because the printer was high in demand and my Cura 3d printing software was informing me I had over 40 hours of total print time. I called the single piece a success and outsourced the rest of the printing.
+          h5 This project ended up being way more challenging than I anticipated because the combination of hardware and using unfamiliar technologies made troubleshooting extremely difficult. At one point I spent an hour trying to figure out why my code wasn't pouring the drinks only to discover I accidentally unplugged the power. In the end, I presented this project at a demo day event and I had learned so much over the process that I was confident in my ability to troubleshoot any problems if they would have occurred.
           a(href="#projects-anchor")
             .back-overview <i>←</i>back to overview
       .feature-wrapper#project3.initially-hidden
@@ -168,7 +181,7 @@ html
             h5 Need a doctor? Enter a symptom and and address to find up to 20 doctors nearby. Receive contact information, a brief description, and a list of their specialties.
             h5 Technologies: BetterDoctor Api, Google Maps Api, Gulp, Bower, NPM, JQuery, Sass
             a(href="#projects-anchor")
-              .learn-more Learn more
+              p.learn-more Learn more
           .three-rows
             a(href="https://dlopez6877.github.io/doctor-api/")
               .additional-info View Site
@@ -190,36 +203,29 @@ html
           a(href="#projects-anchor")
             .back-overview <i>←</i>back to overview
       .feature-wrapper#project4.initially-hidden
-        h2 Drinken
+        h2 ⑇simpleColor
         .featured-project
           .tldr
-            h5 Connect to this robotic bartender on your phone and select a drink from a menu and select the size you want. Drinken will pour it. You are also able to create, remove, update, and delete drink recipes from the beautiful user-friendly interface. The site is only hosted locally on my Raspberry Pi 3 so I have a link to the invision prototype instead.
-            h5 Technologies: MongoDB, Express, Angular, Node.js, Cura, Johnny-Five, Arduino Nano, Sass
+            h5 A color theory website that allows you to say or type a color and receive color pallette information without all the confusing gizmos.
+            h5 Technologies: Gulp, NPM, p5.speech.js, tinycolor.js, thecolorapi, JQuery, Ajax, Sass
             a(href="#projects-anchor")
-              .learn-more Learn more
+              p.learn-more Learn more
           .three-rows
-            a(href="https://invis.io/F9D6XWWZV")
-              .additional-info Prototype
-            a(href="https://github.com/DLopez6877/drinken")
+            a(href="https://dlopez6877.github.io/simpleColor/")
+              .additional-info View Site
+            a(href="https://github.com/DLopez6877/simpleColor")
               .additional-info View Code
-            a(href="https://youtu.be/Ove5rQImxyU")
-              .additional-info Video
-          .featured-project-image.project4
+          .featured-project-image.project2
             img(src="/assets/images/devices4.png")
         .description
           a(href="#projects-anchor")
             .back-overview <i>←</i>back to overview
           h3 About
-          h5 Drinken was my capstone project for Epicodus and I presented it at my classes demo day. I was inspired to make this drink mixing robot because I had learned a large deal about Arduino boards and Johnny-Five(javascript robotics library) while working on the P.O.L.L.I. robotic arm project and wanted to extend that knowledge. I wanted to use the MEAN stack because I was never able to fully implement it into the robotic arm project and I had the knowledge to make it work.
-          h3 Design Choices
-          h5 Drinken is dutch for "drink". I got the idea for the name from Keurig which is dutch for "neat". I drew a lot of inspiration from Keurig because they could both be considered kitchen appliances that are novelties. I originally designed the branding to be high energy and pop out at you with a kitchen esque vibe. 
-          img(src='/assets/images/drinken-design.png')
-          h5 But after getting feedback I did a complete 180 and changed the tone to more a regal feel. The final product uses maroonish red and earthy tones to make sense of elegance and novelty. I redesigned the drink options layout because it was too "tetrisy" and confusing.
-          img(src='/assets/images/user-stories.png')
+          h5 I was frustrated with all the extra features color pallette sites have so I created ⑇simpleClor. The idea is to make it as simple as possible to enter a color and get back hex codes of the related colors you want.
           h3 Process
-          h5 I came across the idea while looking up arduino projects people had done and saw a lot of different variations of this project. Every project was using peristaltic pumps in one way or another but the most impressive overall structure I found was from 
-          <a href="http://yujiangtham.com/2014/05/25/build-your-very-own-drink-mixing-robot-part-1/">Yu Jiang Tham</a> who not only 3d printed his structure but also provided .STL files for the structure to be used as open source. I didn't know anything about 3d printing so I asked around and heard about a free intro to 3d modeling class at the local library. I attended the very next class and three hours later I was ready to print my first piece on the library's 3d printer. It was the smallest piece and in an hour and 20 minutes later I had one out of 19 pieces. Unfortunately, this wasn't going to work because the printer was high in demand and my Cura 3d printing software was informing me I had over 40 hours of total print time. I called the single piece a success and outsourced the rest of the printing.
-          h5 This project ended up being way more challenging than I anticipated because the combination of hardware and using unfamiliar technologies made troubleshooting extremely difficult. At one point I spent an hour trying to figure out why my code wasn't pouring the drinks only to discover I accidentally unplugged the power. In the end, I presented this project at a demo day event and I had learned so much over the process that I was confident in my ability to troubleshoot any problems if they would have occurred.
+          h5 I began ⑇simpleColor during the "bring your own project night" at the monthly front-end PDX meetup I attend. At the time, the only project I was working on was for my internship at ScoutSavvy and I wanted to work on something new. I kept everything to one font, vanilla css, and no javascript framework to keep with the theme of a simple website.
+          h5 The original idea was to do the calculations on converting a hex code into different color combinations but during research I discovered tinycolor.js which had most of the information I already wanted. Later on I decided to add the voice recognition because "Code Train" (a youtube channel I enjoy about p5.js) introduced the new p5 speech recognition add on developed by NYU. Once I had reached mvp I sent a link to my former epicodus classmates asking for feedback.
+          h5 After getting some user feedback, I added the neutral colors, added safeguards on double clicking the hex codes which was copying the string "COPIED!" to the clipboard, made it so that the text is highlighted when you click on the input field, and other minor bugs related to the speech input.
           a(href="#projects-anchor")
             .back-overview <i>←</i>back to overview
       .feature-wrapper#project5.initially-hidden
@@ -229,7 +235,7 @@ html
             h5 A portfolio that was created over the course of one weekend for an assignment at epicodus. Features early projects from my time at Epicodus and demonstrates my growth as a developer.
             h5 Technologies: JQuery, Sass
             a(href="#projects-anchor")
-              .learn-more Learn more
+              p.learn-more Learn more
           .three-rows
             a(href="http://rawgit.com/dlopez6877/portfolio-redux/master/portfolio.html")
               .additional-info View Site

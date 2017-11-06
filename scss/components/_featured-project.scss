@@ -37,7 +37,7 @@ h2 {
   .learn-more {
     display: inline-block;
     font-size: 18px;
-    margin-top: 10px;
+    margin-top: 0px;
     color: $accent-color;
     cursor: pointer;
     transition: letter-spacing .2s cubic-bezier(0.65, 0.69, 0.87, 1.5);
@@ -50,6 +50,8 @@ h2 {
 
 .additional-info {
   padding: 10px 10px 1px 10px; //1px for border transition
+  border-bottom: 1px solid fade-out($accent-color, 1);
+  transition: all .4s ease-in;
   @extend %link-hover;
   &:hover {
     border-bottom: 1px solid $accent-color;
