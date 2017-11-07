@@ -118,7 +118,7 @@ $(function() {
   //hide scroll-indicator on scroll down
   $( "#project-container" ).scroll(function() {
     if ($(this).scrollTop() > 0) {
-      $('.scroll-indicator').fadeOut();
+      $('.scroll-indicator').fadeOut(2000);
     }
   });
 
